@@ -50,3 +50,9 @@ div {
   margin: 1;
   text-align: center;
 }
+
+.navbar {
+  background-color: #eeeeee;
+  margin:auto;
+  text-align: center;
+}
