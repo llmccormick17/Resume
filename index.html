@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>The Human your Org. Needs</title>
+      <title>The Human You Seek</title>
       <script src="script.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
@@ -50,17 +50,52 @@
        </form>
       </div>
       <div>
-        <p>Check out the javascript I have written by clicking the button below.</p>
+        <p>Check out the javascript I have written by interacting with the apps Ive made below.</p>
       </div>
       <br>
-      <div>
+       <div class="maindiv">
+                    <h1>Simple Interest Calculator</h1>
+                    
+                   <!-- inputs for the form, first principal input-->
+                        Amount<input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" id="principal" placeholder="eg. 10000">
+                        <br/>
+                        <!--slider for the interest rate-->
+                        Rate<input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+                        <span id="rate_val">
+                        10.25%
+                        </span> <br/>
+                        <!--drop down selector for number of years-->
+                        No. of Years <select  id="years">
+                           <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            </select>   
+                            <br>
+                        Interest : <span id="results"></span><br/>
+                        <!-- button to submit for results-->
+                    <button onclick="compute()">Compute Interest</button>
+                    <span id="result" style="background-color: #FFFF00">
+                   
+                    </span>
+                </div>
+              <br><br>
+            <div>
         <button onclick="showtime()">
           Show Time
         </button>
        <br>
       </div>
-    <footer>
-      &copy; 2022 llmccormick@hotmail.com
-    </footer>
+   <footer>
+
+            &#169; This Calculator belongs to --Laura McCormick  llmccormick@hotmai.com--
+        
+        </footer>
   </body>
 </html>
