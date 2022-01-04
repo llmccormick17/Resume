@@ -1,0 +1,52 @@
+a {
+  color: black;
+}
+
+body {
+  background: linear-gradient(to bottom right, royalBlue, cornflowerBlue, lightskyBlue, cornflowerBlue, royalBlue);
+  text-align: left;
+  font-size: 100%;
+  font-family: sans-serif;
+  border: 3px solid purple;
+}
+
+h1 {
+  color: darkBlue;
+  background-color: #eeeeee;
+  font-family: italic;
+  text-align: center;
+}
+
+h4 {
+  color: darkBlue;
+  font-family: italic;
+}
+
+img {
+  border: 1px solid darkBlue;
+}
+
+p {
+  font-family: arial;
+  font-size: 15px;
+  color: darkBlue;
+}
+
+div {
+  background-color: white;
+  width: 300px;
+  color: black;
+}
+
+.proflinks {
+  text-align: center;
+  background-color: skyBlue;
+  border: 3px solid purple;
+}
+
+.verify {
+  background-color: lightBlue;
+  padding: 1;
+  margin: 1;
+  text-align: center;
+}
