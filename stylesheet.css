@@ -3,7 +3,7 @@ a {
 }
 
 body {
-  background: linear-gradient(to bottom right, royalBlue, cornflowerBlue, lightskyBlue, cornflowerBlue, royalBlue);
+  background: linear-gradient(to bottom right, royalBlue, cornflowerBlue, aliceBlue, lightskyBlue, aliceBlue, cornflowerBlue, royalBlue);
   text-align: left;
   font-size: 100%;
   font-family: sans-serif;
@@ -20,20 +20,22 @@ h1 {
 h4 {
   color: darkBlue;
   font-family: italic;
+  background-color: #eeeeee;
 }
 
 img {
-  border: 1px solid darkBlue;
+  border: 3px solid darkBlue;
 }
 
 p {
   font-family: arial;
   font-size: 15px;
   color: darkBlue;
+  background-color: #eeeeee;
 }
 
 div {
-  background-color: white;
+  background-color: #eeeeee;
   width: 300px;
   color: black;
 }
