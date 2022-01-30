@@ -36,6 +36,10 @@ img {
   border: 3px solid darkBlue;
 }
 
+li {
+  text-align:left;
+}
+
 p {
   font-family: arial;
   font-size: 20px;
