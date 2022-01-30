@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Laura's Skills</title>
+      <script src="script.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+    <h1>Laura's Skill Set/h1>
+      <div class="new">
+        <p class="headline_new_cert"> Newly Aquired Certifications</p>
+      <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/B6CQ5PVB7H3J">Google Project Management Professional Certificate</a>
+      <img src="proj_man_cert.jpg" alt="picture of certification below link" width="500" height="600">
+        <p> Courses Included: </p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/VWVR5PD98R7D">Foundations of Project Management</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/H8S47KLDGEEJ">Project Initiation: Starting a Successful Project</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/Z5M4MY6QE9LH">Agile Project Management</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/NSVH94Q6YJSR">Project Planning: Putting it all together</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/7C6UL6YN3NEC">Project Execution: Running the Project</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/JMVVSA9KBA2E">Capstone: Applying Project Management in the Real World</a>
+        <p> In addition to</p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/HDQQRQ3ST9V4">Google Suite for Prject Communications</a>
+       <br>
+        <p class="headline_new_data_skills">Newly Aquired Google Data Analysis Skills including</p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/M67QUAU8PCT7">Foundations: Data, Data, Everywhere</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/3HDLB39JDRSS">Ask Questions to Make Data Driven Decisions</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/7PSQXYQ2AWHJ">Analyze Data to Answer Questions</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/FUUWT3USDG48">Prepare Data for Exploration</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/KF2GNGEQKZZW">Process Data from Dirty to Clean</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/R9YM8RTZKEQC">Share Data Through the Art of Visualization</a>
+        <br>
+        <p class="headline_ibm_skills">Newly Aquired IBM Skills</p>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/WWNLPKUNVPEV">What is Data Science</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/C3YNXESGH9HB">Introduction to Web Development with HTML, CSS, JavaScript</a>
+        <a href="https://www.coursera.org/account/accomplishments/certificate/KPZA9VSADTMW">Introduction to Cloud Computing</a>
+        <br>
+      </div>
+      
+      <h2>Skills Aquired Over a 20 Year Career<h2>
+      <div class="20plus">
+        <p>Project management ~ Ethical and Inclusive Leadership ~ Customer Service and Retail Management ~ Team Building Hipaa, Americans with Disabilities Act ~ NDA ~ Confidentiality Restaurant and Kitchen Management ~ Experience Profit & Loss Management ~ Office and Administrative Experience ~ Organizational Skills ~ Efficiency Improvement Mindset~ Agile/ Lean ~ Inventory ~ Receiving ~ Merchandising ~ Inventory Management ~ Interviewing ~ Hiring ~ Scheduling ~ Training ~ Change Management ~ Team Management ~ Menu Planning ~ Asana ~ Trello ~ Google Docs ~ Google Sheets ~ Microsoft Office ~ Google Slides ~ Google Drive ~ Intake Experience ~ Operations Management ~ Time Management Skills ~ Conflict Resolution ~ Effective Stakeholder Communication (10+ years) ~ Research ~ Microsoft Project ~ Presentation Skills ~ Project Coordination ~ Risk Management ~ Employee Orientation ~ Restaurant management (10+ years) ~ Windows Microsoft Excel ~ Administrative experience  ~ Facebook (10+ years) ~ Instagram (6 years) ~ Tiktok (2 years) ~ Twitter (8 years) ~ Operating Systems ~ Project Management Software ~ SQL (1 year) ~ Pivot Tables ~ Data Analysis Skills ~ Tableau ~ Requirements Gathering ~ Big Data ~ Data Collection ~ Guest Relations ~  Data Entry ~ Microsoft Powerpoint ~ Microsoft Outlook ~ Dataframes (1 year) ~  R (1 year) ~ Microsoft Word ~ Google Suite ~ Data Visualization</p>
+      </div>
+      
+      <div class="fieldset">
+      <h3>The Fieldset element
+        <form>
+          <fieldset form="user_regn" name="user_details"> <legend>Sign Up for our mailing list and get a surprize for your birthday!</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+          </fieldset>
+          <input type="submit" value="Submit">
+       </form>
+        </div>
+       <br>
+        <div class="maindiv">
+                    <h1>Simple Interest Calculator</h1>
+                    
+                   <!-- inputs for the form, first principal input-->
+                        Amount<input type="number" onkeyup="if(this.value<0){this.value= this.value * -1}" id="principal" placeholder="eg. 10000">
+                        <br/>
+                        <!--slider for the interest rate-->
+                        Rate<input type="range"  id="rate" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()"> 
+                        <span id="rate_val">
+                        10.25%
+                        </span> <br/>
+                        <!--drop down selector for number of years-->
+                        No. of Years <select  id="years">
+                           <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            </select>   
+                            <br>
+                        Interest : <span id="results"></span><br/>
+                        <!-- button to submit for results-->
+                    <button onclick="compute()">Compute Interest</button>
+                    <span id="result" style="background-color: #FFFF00">
+                   
+                    </span>
+                </div>
+              <br><br>
+        </body>
+        </html>
