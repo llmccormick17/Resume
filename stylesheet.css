@@ -4,10 +4,11 @@ a {
 
 body {
   background: linear-gradient(to bottom right, royalBlue, cornflowerBlue, aliceBlue, lightskyBlue, aliceBlue, cornflowerBlue, royalBlue);
-  text-align: left;
+  text-align: center;
   font-size: 100%;
   font-family: sans-serif;
   border: 3px solid purple;
+  float: auto;
 }
 
 h1 {
