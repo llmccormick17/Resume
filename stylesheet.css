@@ -34,6 +34,7 @@ h4 {
 
 img {
   border: 3px solid darkBlue;
+  size: auto;
 }
 
 li {
