@@ -1,5 +1,8 @@
 a {
   color: black;
+  padding:3px;
+  border:2px black solid;
+  margin: 2px;
 }
 
 body {
